@@ -1,2 +1,2 @@
 # recipe-app-api
-A Recipe API Project with the Django REST Framework
+A Recipe API Project using the Django REST Framework
