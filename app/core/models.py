@@ -1,10 +1,7 @@
-# from django.db import models # noqa
-
-# # Create your models here.
 """
 Database models.
 """
-from multiprocessing.sharedctypes import Value
+from multiprocessing.sharedctypes import Value   # noqa
 from django.db import models
 from django.contrib.auth.models import (
     AbstractBaseUser,
@@ -34,7 +31,6 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
 
         return user
-
 
 
 class User(AbstractBaseUser, PermissionsMixin):
