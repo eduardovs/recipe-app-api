@@ -14,6 +14,7 @@ from recipe import views
 router = DefaultRouter()
 router.register('recipes', views.RecipeViewSet)
 router.register('tags', views.TagViewSet)
+router.register('ingredients', views.IngredientViewSet)
 
 # learning: name used when performing reverse lookup of urls
 app_name = 'recipe'
